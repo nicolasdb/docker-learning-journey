@@ -1,0 +1,39 @@
+# Environment variables
+.env
+.env.*
+
+# Credentials and secrets
+**/credentials/
+**/*_key
+**/*.pem
+**/*.key
+
+# Docker volumes
+**/data/
+**/volumes/
+
+# Logs
+*.log
+logs/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Node modules (if we add any Node.js examples)
+node_modules/
+
+# Python virtual environments (if we add any Python examples)
+venv/
+env/
+.python-version
+
+# Temporary files
+*.tmp
+*.temp
