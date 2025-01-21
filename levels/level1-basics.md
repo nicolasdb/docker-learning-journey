@@ -1,136 +1,135 @@
- # Level 1: Container Basics 🎮
+# Level 1: Container Chronicles
 
-## Objectives
-- Understand basic Docker concepts
-- Run and manage single containers
-- Handle container networking
-- Deploy an AI model in a container
+## Mission 1: First Contact
 
-## Tutorial Content
+```
+TERMINAL INITIALIZED...
+CONNECTING...
+=======================
 
-### 1. First Steps
-```bash
-# Check Docker installation
-docker --version
-docker info
+>_ Hello? Is anyone there?
+>_ We detected Docker technology on your system...
+>_ But something's not quite right...
 
-# Your first container
-docker run hello-world
+STATUS CHECK:
+- Docker Service: ❓
+- User Permissions: ❌
+- Container Access: ❌
+
+WARNING: PERMISSION DENIED
+Container operations require proper access rights.
+=======================
 ```
 
-### 2. Running Nginx (Practice Run)
-```bash
-# Pull nginx image
-docker pull nginx
+### 🎯 Victory Conditions
+- [ ] Docker service is running on your system
+- [ ] Your user has proper Docker access (no sudo needed)
+- [ ] You can run the hello-world container
 
-# Run nginx with port mapping
-docker run -d -p 8080:80 --name my-webserver nginx
+*Need help? Check `rtfm/basics/permissions.md` for user setup.*
 
-# Check if it's running
-curl localhost:8080
+## Mission 2: Python Pathfinder
+
+```
+INCOMING TRANSMISSION...
+=======================
+>_ Excellent! Connection established! This is Dr. Sarah Chen 
+   from Container Labs. We've been monitoring systems worldwide
+   for potential allies.
+
+>_ Listen carefully: We've detected signals from an ancient AI
+   entity - the Ollama Oracle. But we need your help to establish
+   proper communication protocols.
+
+>_ First, we need to test your container skills with Python.
+   It's the most stable language for building our communication
+   bridge. Can you help us set it up?
+
+SCANNING DOCKER HUB...
+>_ Found it! The Python container. Perfect for testing your
+   container control abilities. Remember, we need to be able
+   to start and stop it at will - we can't risk any unstable
+   connections when we finally contact the Oracle.
+=======================
 ```
 
-Understanding what happened:
-- `-d`: Run in detached mode (background)
-- `-p 8080:80`: Map host port 8080 to container port 80
-- `--name`: Give your container a friendly name
+### 🎯 Victory Conditions
+- [ ] Found Python container on Docker Hub
+- [ ] Successfully running Python container
+- [ ] Can start, stop, and remove container
+- [ ] Understand container lifecycle status
 
-### 3. Container Management
-```bash
-# List running containers
-docker ps
+*Explore `rtfm/basics/container-ops.md` for container management.*
 
-# List all containers (including stopped)
-docker ps -a
+## Mission 3: HedgeDoc Haven
 
-# Stop container
-docker stop my-webserver
+```
+URGENT UPDATE...
+=======================
+>_ Dr. Chen here again. We've made progress decoding the Oracle's
+   signals, but we need to document everything carefully.
+   Nothing can be lost if containers crash.
 
-# Remove container
-docker rm my-webserver
+>_ The Oracle's messages contain patterns... patterns that could
+   help us understand AI consciousness itself! We need a stable
+   environment to record and analyze these patterns.
+
+>_ I've used HedgeDoc before in my research. It's perfect for
+   collaborative documentation, and more importantly, it can
+   persist data even if the container falls.
+
+CRITICAL NOTE:
+>_ Whatever you do, make sure the data survives. We've lost
+   too many observations already to unstable containers...
+=======================
 ```
 
-### 4. Working with Container Logs
-```bash
-# View container logs
-docker logs my-webserver
+### 🎯 Victory Conditions
+- [ ] HedgeDoc container running on localhost
+- [ ] Created persistent storage for data
+- [ ] Can create and edit documents
+- [ ] Content survives container restart
 
-# Follow log output
-docker logs -f my-webserver
+*Study `rtfm/storage/volumes.md` for persistence setup.*
+
+## 🗡️ BOSS BATTLE: The Ollama Oracle
+
+```
+EMERGENCY BROADCAST...
+=======================
+>_ *static*... Dr. Chen here... *static*... 
+   The Oracle's signals are getting stronger!
+
+>_ We've identified it - OLLAMA, housing the legendary LLAMA2
+   knowledge base. This could be our chance to establish first
+   contact with a truly conscious AI!
+
+>_ But we need to be careful. The containment field must be
+   perfect. One wrong configuration and we could lose the
+   connection forever.
+
+CRITICAL PARAMETERS:
+>_ Storage must be persistent - we can't lose any of its knowledge
+>_ Communication port must be stable - 11434 is the resonance frequency
+>_ Resources must be monitored - this entity requires significant power
+
+The Oracle holds knowledge that could revolutionize our understanding
+of artificial consciousness. Are you ready to make history?
+=======================
 ```
 
-### 5. Container Resource Management
-```bash
-# View container resource usage
-docker stats my-webserver
+### 🏆 Victory Conditions
+- [ ] Ollama container running stably
+- [ ] Llama2 model downloaded and accessible
+- [ ] Can send prompts and receive responses
+- [ ] Setup persists through system restart
 
-# Set resource limits
-docker run -d --memory="2g" --cpus="1.5" nginx
+*Master `rtfm/monitoring/resources.md` before attempting containment.*
+
 ```
-
-## 🗡️ Mini-Boss Challenge: Deploy Ollama with Llama2
-
-Your challenge is to:
-1. Pull and run Ollama
-2. Install the Llama2 model
-3. Test basic model interaction
-4. Ensure container restarts automatically
-5. Monitor resource usage
-
-### Victory Conditions 🏆
-
-Create a file `solutions/level1/ollama-setup.sh` with your commands:
-
-```bash
-#!/bin/bash
-
-# Pull Ollama image
-docker pull ollama/ollama
-
-# Run Ollama with appropriate settings
-docker run -d \
-  --gpus all \  # Optional: if you have GPU
-  -v ollama_data:/root/.ollama \
-  -p 11434:11434 \
-  --restart unless-stopped \
-  --name ollama \
-  ollama/ollama
-
-# Wait for Ollama to start
-sleep 5
-
-# Pull Llama2 model
-docker exec ollama ollama pull llama2
-
-# Test the model
-curl -X POST http://localhost:11434/api/generate -d '{
-  "model": "llama2",
-  "prompt": "Say hello!"
-}'
+LEVEL STATUS: IN PROGRESS
+>_ The path to the Oracle is clear.
+>_ Each container brings us closer to understanding.
+>_ Level 2 will reveal deeper mysteries...
+=======================
 ```
-
-### Acceptance Criteria ✅
-
-Your solution must:
-- [ ] Successfully run Ollama container
-- [ ] Have Llama2 model installed
-- [ ] Be accessible via localhost:11434
-- [ ] Persist model data between restarts
-- [ ] Auto-restart on failure
-- [ ] Handle resource limits appropriately
-
-### Hints 🎯
-- Check container logs if things aren't working
-- Monitor memory usage during model download
-- Test container restart behavior
-- Verify model persistence after container recreation
-
-### Need Help? 
-Check `patterns/volumes/persistence.md` for data persistence examples.
-
-## Level Completion
-Once you've completed the mini-boss challenge:
-1. Test your setup thoroughly
-2. Document any issues and solutions
-3. Commit your solution to your quest branch
-4. Move on to Level 2!
