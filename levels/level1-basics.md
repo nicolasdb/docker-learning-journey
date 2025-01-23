@@ -7,7 +7,7 @@ TERMINAL INITIALIZED...
 CONNECTING...
 =======================
 
->_ Hello? Is anyone there?
+>clear_ Hello? Is anyone there?
 >_ We detected Docker technology on your system...
 >_ But something's not quite right...
 
@@ -61,6 +61,7 @@ SCANNING DOCKER HUB...
 - [ ] Can start, stop, and remove container
 - [ ] Understand Python container lifecycle and auto-stop behavior
 - [ ] Create a Dockerfile and build a custom Python container
+- [ ] Bonus: deploy python-hello-world as a webapp on streamlit
 
 *Need help? Check `rtfm/basics/container-ops.md` and `rtfm/basics/dockerfile-basics.md` for guidance.*
 
