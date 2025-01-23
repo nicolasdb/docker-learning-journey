@@ -1,8 +1,11 @@
 # Docker Storage: Volumes vs Bind Mounts
 
 ## Volumes
+
 Docker-managed storage units, perfect for data persistence.
+
 ### Data Persistence
+
 > TLDR: Docker volumes are managed by Docker and are not directly accessible from the host, while bind mounts provide direct access to host directories and files from within the container.
 
 1. **Named Volumes**:
@@ -16,8 +19,8 @@ Docker-managed storage units, perfect for data persistence.
    - Changes in the host directory are immediately reflected in the container and vice versa.
    - Useful for development environments where you need direct access to files from both the host and the container.
 
-
 ### Key Commands
+
 ```bash
 # Create volume
 docker volume create my_volume
@@ -32,11 +35,12 @@ docker volume inspect my_volume
 docker run -v my_volume:/container/path image_name
 ```
 
-
 ## Types of Persistence
 
 ### Named Volumes
+
 Docker-managed persistent storage
+
 ```bash
 # Create volume
 docker volume create my_data
@@ -55,7 +59,9 @@ docker volume rm my_data
 ```
 
 ### Bind Mounts
+
 Direct mapping to host filesystem
+
 ```bash
 # Mount host directory
 docker run -v /host/path:/container/path my-image
@@ -65,6 +71,7 @@ docker run -v $(pwd):/container/path my-image
 ```
 
 ## HedgeDoc Example
+
 ```bash
 # Create volume for HedgeDoc data
 docker volume create hedgedoc_data
@@ -78,6 +85,7 @@ docker run -d \
 ```
 
 ## Best Practices
+
 - Use named volumes for application data
 - Use bind mounts for development
 - Always back up important volumes
@@ -85,6 +93,7 @@ docker run -d \
 - Set appropriate permissions
 
 ## Backup and Restore
+
 ```bash
 # Backup volume
 docker run --rm -v my_volume:/source -v $(pwd):/backup alpine \
@@ -94,4 +103,3 @@ docker run --rm -v my_volume:/source -v $(pwd):/backup alpine \
 docker run --rm -v my_volume:/dest -v $(pwd):/backup alpine \
   tar xzf /backup/my_volume_backup.tar.gz -C /dest
 ```
-

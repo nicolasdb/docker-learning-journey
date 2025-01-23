@@ -3,7 +3,9 @@
 ## Step 1: Docker Setup Verification
 
 ### Permissions Check
+
 After installing Docker Desktop (or Docker Engine), ensure proper permissions:
+
 ```bash
 # Add your user to docker group
 sudo usermod -aG docker $USER
@@ -20,6 +22,7 @@ docker run hello-world
 Let's master the basic container lifecycle using hello-world and nginx:
 
 ### Container Lifecycle
+
 ```bash
 # Pull and run hello-world
 docker run hello-world
@@ -38,6 +41,7 @@ docker rm <container id or name>
 ```
 
 ### Practice with Nginx
+
 ```bash
 # Pull nginx image
 docker pull nginx
@@ -45,10 +49,13 @@ docker pull nginx
 # Run with specific port mapping and name 
 docker run -d -p 8080:80 --name test-nginx nginx
 ```
+
 Understanding what happened:
+
 - `-d`: Run in detached mode (background)
 - `-p 8080:80`: Map host port 8080 to container port 80
 - `--name`: Give your container a friendly name
+
 ```bash
 # Verify it's running
 curl localhost:8080  # Or check http://localhost:8080 in browser
@@ -57,6 +64,7 @@ curl localhost:8080  # Or check http://localhost:8080 in browser
 ## Step 3: Container Management and Monitoring
 
 ### Logs and Resource Monitoring
+
 ```bash
 # View container logs
 docker logs test-nginx
@@ -69,6 +77,7 @@ docker stats test-nginx
 ```
 
 ### Data Persistence
+
 TLDR: Docker volumes are managed by Docker and are not directly accessible from the host, while bind mounts provide direct access to host directories and files from within the container.
 
 1. **Docker Volumes**:
@@ -82,7 +91,6 @@ TLDR: Docker volumes are managed by Docker and are not directly accessible from 
    - Changes in the host directory are immediately reflected in the container and vice versa.
    - Useful for development environments where you need direct access to files from both the host and the container.
 
-
 ```bash
 # Create a docker volume
 docker volume create nginx-data
@@ -94,13 +102,14 @@ docker run -d \
   --name test-nginx-persistent \
   nginx
 ```
+
 The command `docker run -d -p 8080:80 -v nginx-data:/usr/share/nginx/html --name test-nginx-persistent nginx` is used to start a new Docker container running the Nginx web server with specific configurations.
 
 Here's a breakdown of the command:
 
 1. `docker run -d`: This is the base command to create and start a new Docker container in detached mode.
 
-2. `-p 8080:80`: This option maps port 8080 on your host machine to port 80 in the container. Port 80 is the default port for HTTP traffic in the Nginx server. 
+2. `-p 8080:80`: This option maps port 8080 on your host machine to port 80 in the container. Port 80 is the default port for HTTP traffic in the Nginx server.
 
 3. `-v nginx-data:/usr/share/nginx/html`: This flag mounts a Docker volume named `nginx-data` to the directory `/usr/share/nginx/html` inside the container. This setup ensures that any data stored in the Nginx HTML directory persists even if the container is stopped or removed, as the data is stored in the named volume `nginx-data`.
 
@@ -111,6 +120,7 @@ Here's a breakdown of the command:
 ## Step 4: Container Updates and Cleanup
 
 ### Updating Containers
+
 ```bash
 # Pull latest version of an image
 docker pull nginx:latest
@@ -124,6 +134,7 @@ docker run -d -p 8080:80 --name test-nginx nginx:latest
 ```
 
 ### Cleanup Operations
+
 ```bash
 # Remove a specific container
 docker rm <container_id_or_name>
@@ -151,13 +162,16 @@ docker system prune
 ## Mini-Boss Challenges
 
 ### Challenge 1: Container Mastery
+
 Complete these tasks:
+
 - [ ] Pull and Run 3 different docker images
 - [ ] Monitor their resource usage
 - [ ] Clean up all containers and images properly
 - [ ] Use both CLI and Docker Desktop GUI to manage containers
 
-#### Rewards: 
+#### Rewards
+
 1. Basic Container Operations
    - [x] Can run/stop/remove containers confidently
    - [x] Understand container naming and identification
@@ -169,6 +183,7 @@ Complete these tasks:
    - [ ] Can update containers safely
 
 ### Challenge 2: Deploy Ollama
+
 1. Pull and run Ollama
 2. Install the Llama2 model
 3. Test basic model interaction
@@ -210,6 +225,7 @@ curl -X POST http://localhost:11434/api/generate -d '{
 ### Acceptance Criteria ✅
 
 Your solution must:
+
 - [ ] Successfully run Ollama container
 - [ ] Have Llama2 model installed
 - [ ] Be accessible via localhost:11434
@@ -219,12 +235,14 @@ Your solution must:
 - [ ] Get responses from the model
 
 ### Hints 🎯
+
 - Check container logs if things aren't working
 - Monitor memory usage during model download
 - Test container restart behavior
 - Verify model persistence after container recreation
 
 ## Bonus Knowledge
+
 - Check `patterns/` directory for common command patterns
 - Understand the difference between:
   - Container removal (`docker rm`)
@@ -232,11 +250,13 @@ Your solution must:
   - Volume management (`docker volume`)
 
 ## Level Completion
+
 Once you've completed the mini-boss challenge:
+
 1. Test your setup thoroughly
 2. Document any issues and solutions
 3. Commit your solution to your quest branch
 
 ## Next Level Preview
-In Level 2, we'll explore Docker Compose to manage multiple containers together!
 
+In Level 2, we'll explore Docker Compose to manage multiple containers together!

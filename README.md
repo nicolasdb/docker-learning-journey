@@ -5,16 +5,20 @@ Welcome to a gamified approach to learning Docker and Docker Compose! This repos
 ## Getting Started
 
 1. Clone this repository
+
    ```bash
    git clone https://github.com/yourusername/docker-learning-journey.git
    cd docker-learning-journey
    ```
+
    > to clone this repo and open the directory
 
 2. Create your quest branch
+
     ```bash
     git checkout -b myQuest
     ```
+
     > to create or switch to, a new branch
 
 3. Follow followThisWhiteRabbit.md to begin your journey!
@@ -33,7 +37,10 @@ Level 3: Custom Configurations
 Level 4: Boss Level - Building Your Own Setup
 
 ## Contributing
+
 Feel free to submit PRs with additional examples, challenges, or improvements!
+
 ## License
+
  Copyright 2025 Nicolas de Barquin
  Licensed under the Apache License, Version 2.0

@@ -3,6 +3,7 @@
 ## Resource Management
 
 ### View Resource Usage
+
 ```bash
 # Monitor all containers
 docker stats
@@ -15,6 +16,7 @@ docker stats --no-stream
 ```
 
 ### Set Resource Limits
+
 ```bash
 # Limit memory
 docker run -m 512m my-image
@@ -29,6 +31,7 @@ docker run -m 512m --cpus=".5" my-image
 ## Container Health
 
 ### Logs
+
 ```bash
 # View logs
 docker logs <container_name>
@@ -44,6 +47,7 @@ docker logs --tail 100 <container_name>
 ```
 
 ### Container Status
+
 ```bash
 # View container details
 docker inspect <container_name>
@@ -68,11 +72,13 @@ docker run --restart unless-stopped my-image
 ## Ollama Specific
 
 ### Resource Requirements
+
 - Minimum 8GB RAM recommended
 - CPU with AVX2 support
 - Storage for models (varies by model)
 
 ### Monitoring Example
+
 ```bash
 # Run Ollama with resource limits
 docker run -d \
@@ -89,6 +95,7 @@ docker stats ollama
 ```
 
 ## Best Practices
+
 - Monitor resource usage regularly
 - Set appropriate limits based on application needs
 - Use restart policies for stability

@@ -2,7 +2,7 @@
 
 ## Mission 1: First Contact
 
-```
+```plaintext
 TERMINAL INITIALIZED...
 CONNECTING...
 =======================
@@ -21,7 +21,8 @@ Container operations require proper access rights.
 =======================
 ```
 
-### 🎯 Victory Conditions
+### 🎯 Mission 1 Victory Conditions
+
 - [ ] Docker service is running on your system
 - [ ] Your user has proper Docker access (no sudo needed)
 - [ ] You can run the hello-world container
@@ -30,7 +31,7 @@ Container operations require proper access rights.
 
 ## Mission 2: Python Pathfinder
 
-```
+```plaintext
 INCOMING TRANSMISSION...
 =======================
 >_ Excellent! Connection established! This is Dr. Sarah Chen 
@@ -53,7 +54,8 @@ SCANNING DOCKER HUB...
 =======================
 ```
 
-### 🎯 Victory Conditions
+### 🎯 Mission 2 Victory Conditions
+
 - [ ] Found Python container on Docker Hub
 - [ ] Successfully running Python container
 - [ ] Can start, stop, and remove container
@@ -63,7 +65,7 @@ SCANNING DOCKER HUB...
 
 ## Mission 3: HedgeDoc Haven
 
-```
+```plaintext
 URGENT UPDATE...
 =======================
 >_ Dr. Chen here again. We've made progress decoding the Oracle's
@@ -84,7 +86,8 @@ CRITICAL NOTE:
 =======================
 ```
 
-### 🎯 Victory Conditions
+### 🎯 Mission 3 Victory Conditions
+
 - [ ] HedgeDoc container running on localhost
 - [ ] Created persistent storage for data
 - [ ] Can create and edit documents
@@ -94,7 +97,7 @@ CRITICAL NOTE:
 
 ## 🗡️ BOSS BATTLE: The Ollama Oracle
 
-```
+```plaintext
 EMERGENCY BROADCAST...
 =======================
 >_ *static*... Dr. Chen here... *static*... 
@@ -118,7 +121,8 @@ of artificial consciousness. Are you ready to make history?
 =======================
 ```
 
-### 🏆 Victory Conditions
+### 🏆 Boss Battle Victory Conditions
+
 - [ ] Ollama container running stably
 - [ ] Llama2 model downloaded and accessible
 - [ ] Can send prompts and receive responses
@@ -126,7 +130,7 @@ of artificial consciousness. Are you ready to make history?
 
 *Master `rtfm/monitoring/resources.md` before attempting containment.*
 
-```
+```plaintext
 LEVEL STATUS: IN PROGRESS
 >_ The path to the Oracle is clear.
 >_ Each container brings us closer to understanding.
