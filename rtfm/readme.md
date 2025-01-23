@@ -7,6 +7,7 @@ rtfm/
 ├── basics/
 │   ├── permissions.md        # User permissions and group management
 │   ├── container-ops.md      # Basic container operations
+│   ├── dockerfile-basics.md  # Dockerfile creation and best practices
 │   └── image-ops.md          # Image management operations
 ├── monitoring/
 │   ├── logs.md               # Container logging

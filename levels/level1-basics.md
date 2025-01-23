@@ -47,7 +47,7 @@ INCOMING TRANSMISSION...
    bridge. Can you help us set it up?
 
 SCANNING DOCKER HUB...
->_ Found it! The Python container. Perfect for testing your
+>_ Did you found you found the Python container? Perfect for testing your
    container control abilities. Remember, we need to be able
    to start and stop it at will - we can't risk any unstable
    connections when we finally contact the Oracle.
@@ -59,9 +59,10 @@ SCANNING DOCKER HUB...
 - [ ] Found Python container on Docker Hub
 - [ ] Successfully running Python container
 - [ ] Can start, stop, and remove container
-- [ ] Understand container lifecycle status
+- [ ] Understand Python container lifecycle and auto-stop behavior
+- [ ] Create a Dockerfile and build a custom Python container
 
-*Explore `rtfm/basics/container-ops.md` for container management.*
+*Need help? Check `rtfm/basics/container-ops.md` and `rtfm/basics/dockerfile-basics.md` for guidance.*
 
 ## Mission 3: HedgeDoc Haven
 
