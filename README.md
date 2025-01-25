@@ -31,16 +31,48 @@ Welcome to a gamified approach to learning Docker and Docker Compose! This repos
 
 ## Journey Structure
 
-Level 1: Docker Basics
-Level 2: Docker Compose Fundamentals
-Level 3: Custom Configurations
-Level 4: Boss Level - Building Your Own Setup
+The journey is divided into progressive levels:
+
+1. Level 1: Docker Basics (Start Here!)
+   - Container fundamentals
+   - Basic Docker commands
+   - Dockerfile creation
+
+2. Level 2: Docker Compose
+   - Multi-container applications
+   - Service definitions
+   - Container networking
+
+3. Level 3: Custom Configurations
+   - Advanced Docker features
+   - Container optimization
+   - Best practices
+
+4. Level 4: Boss Level
+   - Final challenge
+   - Real-world scenarios
+   - Complex deployments
+
+Each level is documented in the `levels/` directory, with reference materials available in the `rtfm/` (Read The Friendly Manual) directory.
+
+## Documentation
+
+- `rtfm/`: Comprehensive documentation covering Docker concepts, operations, and best practices
+- `levels/`: Detailed instructions and challenges for each learning level
+- `docs/`: Project documentation including contribution guidelines and licensing
 
 ## Contributing
 
-Feel free to submit PRs with additional examples, challenges, or improvements!
+We welcome contributions! Please see `docs/CONTRIBUTING.md` for guidelines.
+
+For community standards and expectations, refer to:
+- `CODE_OF_CONDUCT.md` (Basic guidelines)
+- `docs/CODE_OF_CONDUCT_extended.md` (Detailed guidelines)
+
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)
 
 ## License
 
- Copyright 2025 Nicolas de Barquin
- Licensed under the Apache License, Version 2.0
+Copyright 2025 Nicolas de Barquin
+
+Licensed under the Apache License, Version 2.0. See `docs/LICENSE` for the full license text.

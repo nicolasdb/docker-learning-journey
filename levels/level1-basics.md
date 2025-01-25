@@ -29,113 +29,117 @@ Container operations require proper access rights.
 
 *Need help? Check `rtfm/basics/permissions.md` for user setup.*
 
-## Mission 2: Python Pathfinder
+## Mission 2: Container Explorer
 
 ```plaintext
 INCOMING TRANSMISSION...
 =======================
->_ Excellent! Connection established! This is Dr. Sarah Chen 
+>_ Excellent! Connection established! This is Commander Chen 
    from Container Labs. We've been monitoring systems worldwide
    for potential allies.
 
->_ Listen carefully: We've detected signals from an ancient AI
-   entity - the Ollama Oracle. But we need your help to establish
-   proper communication protocols.
+>_ Listen carefully: We need to test your container skills
+   with a simple application first. Python will be perfect
+   for this test - it's stable and widely used.
 
->_ First, we need to test your container skills with Python.
-   It's the most stable language for building our communication
-   bridge. Can you help us set it up?
+>_ Can you help us set up a test environment? We need to
+   ensure you can control containers effectively before
+   we proceed with more complex missions.
 
 SCANNING DOCKER HUB...
->_ Did you found you found the Python container? Perfect for testing your
-   container control abilities. Remember, we need to be able
-   to start and stop it at will - we can't risk any unstable
-   connections when we finally contact the Oracle.
+>_ Found the Python container? Perfect! Now let's test your
+   container control abilities. Remember, mastery over
+   basic operations is crucial for what lies ahead.
 =======================
 ```
 
 ### 🎯 Mission 2 Victory Conditions
 
-- [ ] Found Python container on Docker Hub
+- [ ] Found and pulled official Python container
 - [ ] Successfully running Python container
 - [ ] Can start, stop, and remove container
-- [ ] Understand Python container lifecycle and auto-stop behavior
-- [ ] Create a Dockerfile and build a custom Python container
-- [ ] Bonus: deploy python-hello-world as a webapp on streamlit
+- [ ] Understand container lifecycle management
+- [ ] Create a Dockerfile for a custom Python application
+- [ ] Successfully build and run your custom container
 
 *Need help? Check `rtfm/basics/container-ops.md` and `rtfm/basics/dockerfile-basics.md` for guidance.*
 
-## Mission 3: HedgeDoc Haven
+## Mission 3: Data Persistence
 
 ```plaintext
 URGENT UPDATE...
 =======================
->_ Dr. Chen here again. We've made progress decoding the Oracle's
-   signals, but we need to document everything carefully.
-   Nothing can be lost if containers crash.
+>_ Commander Chen here again. Your container skills are
+   improving, but there's one crucial aspect we need
+   to test: data persistence.
 
->_ The Oracle's messages contain patterns... patterns that could
-   help us understand AI consciousness itself! We need a stable
-   environment to record and analyze these patterns.
+>_ In the field, data loss is not an option. We need
+   to ensure your containers can maintain their state
+   even through restarts and updates.
 
->_ I've used HedgeDoc before in my research. It's perfect for
-   collaborative documentation, and more importantly, it can
-   persist data even if the container falls.
+>_ Your mission: Set up a containerized web application
+   that can persist data. This will simulate real-world
+   scenarios where data preservation is critical.
 
 CRITICAL NOTE:
->_ Whatever you do, make sure the data survives. We've lost
-   too many observations already to unstable containers...
+>_ Whatever you do, make sure the data survives container
+   restarts. We can't afford to lose valuable information!
 =======================
 ```
 
 ### 🎯 Mission 3 Victory Conditions
 
-- [ ] HedgeDoc container running on localhost
-- [ ] Created persistent storage for data
-- [ ] Can create and edit documents
-- [ ] Content survives container restart
+- [ ] Container running with persistent storage
+- [ ] Data survives container restarts
+- [ ] Proper volume configuration
+- [ ] Can modify and persist content
+- [ ] Understand different storage options
 
 *Study `rtfm/storage/volumes.md` for persistence setup.*
 
-## 🗡️ BOSS BATTLE: The Ollama Oracle
+## 🗡️ BOSS BATTLE: The Integration Challenge
 
 ```plaintext
 EMERGENCY BROADCAST...
 =======================
->_ *static*... Dr. Chen here... *static*... 
-   The Oracle's signals are getting stronger!
+>_ *static*... Commander Chen here... *static*... 
+   This is the moment of truth!
 
->_ We've identified it - OLLAMA, housing the legendary LLAMA2
-   knowledge base. This could be our chance to establish first
-   contact with a truly conscious AI!
+>_ We need you to combine everything you've learned:
+   - Container management
+   - Custom images
+   - Data persistence
+   - Resource monitoring
 
->_ But we need to be careful. The containment field must be
-   perfect. One wrong configuration and we could lose the
-   connection forever.
+>_ Your final challenge: Create a complete containerized
+   application environment that demonstrates mastery of
+   these fundamental skills.
 
 CRITICAL PARAMETERS:
->_ Storage must be persistent - we can't lose any of its knowledge
->_ Communication port must be stable - 11434 is the resonance frequency
->_ Resources must be monitored - this entity requires significant power
+>_ Storage must be persistent
+>_ Ports must be properly mapped
+>_ Resources must be monitored
+>_ Container must auto-restart on failure
 
-The Oracle holds knowledge that could revolutionize our understanding
-of artificial consciousness. Are you ready to make history?
+The success of future missions depends on mastering
+these fundamentals. Are you ready?
 =======================
 ```
 
 ### 🏆 Boss Battle Victory Conditions
 
-- [ ] Ollama container running stably
-- [ ] Llama2 model downloaded and accessible
-- [ ] Can send prompts and receive responses
-- [ ] Setup persists through system restart
+- [ ] Custom application container running stably
+- [ ] Persistent storage properly configured
+- [ ] Port mapping working correctly
+- [ ] Container auto-restart enabled
+- [ ] Resource monitoring in place
+- [ ] Setup survives system restart
 
-*Master `rtfm/monitoring/resources.md` before attempting containment.*
+*Master `rtfm/monitoring/resources.md` before attempting this challenge.*
 
 ```plaintext
 LEVEL STATUS: IN PROGRESS
->_ The path to the Oracle is clear.
->_ Each container brings us closer to understanding.
->_ Level 2 will reveal deeper mysteries...
+>_ Your journey into container mastery has begun.
+>_ Each challenge builds your expertise.
+>_ Level 2 will reveal more advanced concepts...
 =======================
-```
