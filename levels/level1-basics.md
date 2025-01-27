@@ -1,4 +1,4 @@
-# Level 1: Container Chronicles
+# Stage 1: First Contact Protocol
 
 ## Mission 1: First Contact
 
@@ -7,7 +7,7 @@ TERMINAL INITIALIZED...
 CONNECTING...
 =======================
 
->clear_ Hello? Is anyone there?
+>_ Hello? Is anyone there?
 >_ We detected Docker technology on your system...
 >_ But something's not quite right...
 

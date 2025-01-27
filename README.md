@@ -2,27 +2,6 @@
 
 Welcome to a gamified approach to learning Docker and Docker Compose! This repository is structured as a progressive learning journey, taking you from Docker basics to creating and managing complex container setups.
 
-## Getting Started
-
-1. Clone this repository
-
-   ```bash
-   git clone https://github.com/yourusername/docker-learning-journey.git
-   cd docker-learning-journey
-   ```
-
-   > to clone this repo and open the directory
-
-2. Create your quest branch
-
-    ```bash
-    git checkout -b myQuest
-    ```
-
-    > to create or switch to, a new branch
-
-3. Follow followThisWhiteRabbit.md to begin your journey!
-
 ## Prerequisites
 
 - Basic command line knowledge
@@ -54,6 +33,27 @@ The journey is divided into progressive levels:
    - Complex deployments
 
 Each level is documented in the `levels/` directory, with reference materials available in the `rtfm/` (Read The Friendly Manual) directory.
+
+## Getting Started
+
+1. Clone this repository
+
+   ```bash
+   git clone https://github.com/yourusername/docker-learning-journey.git
+   cd docker-learning-journey
+   ```
+
+   > to clone this repo and open the directory
+
+2. Create your quest branch
+
+    ```bash
+    git checkout -b myQuest
+    ```
+
+    > to create or switch to, a new branch
+
+3. Follow [followThisWhiteRabbit.md](followThisWhiteRabbit.md) to begin your journey!
 
 ## Documentation
 

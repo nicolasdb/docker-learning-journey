@@ -1,4 +1,4 @@
-# Level 4: FINAL CHALLENGE
+# Stage 4: Operation Infinity
 
 ```plaintext
 EMERGENCY BROADCAST...

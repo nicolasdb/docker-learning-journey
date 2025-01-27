@@ -1,4 +1,4 @@
-# Level 3: Advanced Container Craft
+# Stage 3: Defense & Operations Division
 
 ## Mission 1: Resource Ranger
 

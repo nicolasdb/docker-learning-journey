@@ -1,4 +1,4 @@
-# Level 2: Multi-Container Mastery
+# Stage 2: Network Command Center
 
 ## Mission 1: Compose Initiation
 
