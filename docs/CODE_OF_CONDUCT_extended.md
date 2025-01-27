@@ -1,6 +1,16 @@
 # Extended Code of Conduct for Physical Spaces
 
-This extension applies to physical spaces and in-person interactions.
+This extension provides straightforward guidelines to prevent harmful behaviors and outlines how to respond when issues arise.
+
+> 📋 Template Notice: This document provides a basic structure for physical space guidelines. Replace placeholders with specific information for your space and community.
+
+## Emergency Response Priority
+
+1. Life-threatening → Call 112 (EU)
+2. Serious injury → First Aid + Space Leader
+3. Equipment/Safety Concern → Space Leader
+
+For immediate assistance contact: [SPACE EMERGENCY CONTACT]
 
 ## Physical Space Standards
 
@@ -27,32 +37,34 @@ Examples of unacceptable behavior in physical spaces:
 
 ### For All Members
 
-* Complete required safety training
+* Complete required safety training before using equipment
 * Follow space access protocols
 * Know emergency procedures
-* Report safety concerns
+* Report safety concerns promptly
 
 ### For Space Leaders
 
 * Maintain safety standards
-* Ensure proper training
+* Ensure proper training completion
 * Monitor equipment condition
 * Address space-related incidents
 * Document and communicate decisions
-
-For immediate safety concerns, contact: [EMERGENCY CONTACT]
-<placeholder>Access space guidelines and procedures</placeholder>
 
 ## Implementation
 
 This extension requires:
 
-* Visible posting in physical spaces
-* Integration with member onboarding
-* Regular safety reviews
-* Clear incident procedures
+* [ ] Visible posting in physical spaces
+* [ ] Integration with member onboarding
+* [ ] Regular safety reviews
+* [ ] Clear incident procedures
 
-<placeholder>View complete space management documentation</placeholder>
+> 🔗 Additional Resources:
+>
+> * [Space Guidelines and Procedures](link-to-guidelines)
+> * [Safety Training Requirements](link-to-training)
+> * [Equipment Usage Policies](link-to-policies)
+> * [Incident Reporting Forms](link-to-forms)
 
 ---
 

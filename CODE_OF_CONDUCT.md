@@ -1,8 +1,8 @@
 # Code of Conduct
 
-## Our Mission and Pledge
+The "Code of Conduct" exists to create a clear, safe, and productive environment where everyone can participate fully. It provides straightforward guidelines to prevent harmful behaviors and outlines how we'll respond when issues arise.
 
-Our mission is to create environments that nurture personal growth and enrich collective knowledge, enabling each person to develop their unique potential while contributing to our shared cognitive wealth.
+## Our Mission and Pledge
 
 We as members, contributors, and leaders pledge to make participation in our community a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, caste, color, religion, political views, or sexual identity and orientation.
 
@@ -45,24 +45,26 @@ We pledge to act and interact in ways that contribute to an open, welcoming, div
 * Communicate reasons for moderation decisions when appropriate
 * Maintain the privacy and security of reported incidents
 
-For questions or concerns, contact: @nicolasdb
-<!-- [_View detailed community guidelines_]() -->
+For now, report concerns to [@nicolasdb](https://github.com/nicolasdb). Additional reporting channels to be developed - see [related issue](https://github.com/nicolasdb/docker-learning-journey/issues).
 
 ## Scope
 
 This Code of Conduct applies to all community spaces and when representing our community in public spaces. Examples include using official email addresses, posting via official social media accounts, or acting as an appointed representative at events.
+Our community operates from Brussels (UTC+1) while welcoming global participation. We strive to make key events and decisions accessible across time zones.
 
 ## Enforcement
 
 Community leaders will respond to violations by:
 
-1. Documenting the incident
-2. Determining appropriate action
-3. Enforcing the decision
-4. Following up as needed
+* [ ] Documenting the incident
+* [ ] Determining appropriate action
+* [ ] Enforcing the decision
+* [ ] Following up as needed
 
-[- _Access complete enforcement guidelines_](https://github.com/mozilla/inclusion/blob/master/code-of-conduct-enforcement/consequence-ladder.md)
-[- _Mozilla's Community Participation Guidelines Training for Staff_](https://mozilla.teachable.com/p/cpg-training-staff) - which is basically like a 'first aid course', but for enforcement.
+We aim to acknowledge reports within 48 hours and will provide regular updates on any actions taken.
+
+* [_Access complete enforcement guidelines_](https://github.com/mozilla/inclusion/blob/master/code-of-conduct-enforcement/consequence-ladder.md)
+* [_Mozilla's Community Participation Guidelines Training for Staff_](https://mozilla.teachable.com/p/cpg-training-staff) - which is basically like a 'first aid course', but for enforcement.
 
 ## Attribution
 
@@ -73,3 +75,6 @@ Enforcement Guidelines were inspired by [Mozilla's code of conduct enforcement l
 ---
 
 For physical spaces, see our [Extended Code of Conduct for Maker Spaces](./docs/CODE_OF_CONDUCT_extended.md).
+
+> 📝 This is a living document. See our [open issues](./issues) for planned improvements and ways to contribute.
+> 🗃️ Additional resources and detailed guidelines are maintained separately to keep this document focused and actionable. See our [community documentation](./docs/) for training requirements and internal procedures.

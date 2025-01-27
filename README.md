@@ -66,8 +66,9 @@ Each level is documented in the `levels/` directory, with reference materials av
 We welcome contributions! Please see `docs/CONTRIBUTING.md` for guidelines.
 
 For community standards and expectations, refer to:
-- `CODE_OF_CONDUCT.md` (Basic guidelines)
-- `docs/CODE_OF_CONDUCT_extended.md` (Detailed guidelines)
+
+- `CODE_OF_CONDUCT.md` (strong foundation for common dynamics)
+- `docs/CODE_OF_CONDUCT_extended.md` (for physical maker spaces dynamics)
 
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)
 
@@ -75,4 +76,4 @@ For community standards and expectations, refer to:
 
 Copyright 2025 Nicolas de Barquin
 
-Licensed under the Apache License, Version 2.0. See `docs/LICENSE` for the full license text.
+Licensed under the Apache License, Version 2.0. See `./LICENSE` for the full license text.
