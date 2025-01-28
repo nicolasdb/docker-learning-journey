@@ -4,8 +4,6 @@
 
 ### Pull Images
 
-> **Note:** To find the name of a specific image to pull, you can search for images on [Docker Hub](https://hub.docker.com/). Docker Hub is a public repository where Docker images are stored. You can use the search functionality on Docker Hub to find images by name, description, or tags. Once you find the desired image, you can use its name and tag in the docker pull command.
-
 ```bash
 # Pull specific image
 docker pull python:3.9-slim
@@ -14,9 +12,9 @@ docker pull python:3.9-slim
 docker images
 ```
 
-### Run Containers
+> **Note:** [Docker Hub](https://hub.docker.com/) is a public repository where Docker images are stored. Once you find the desired image, you can use its name and tag in the docker pull command.
 
-> **Note:** When you use a Docker container to run Python, the container typically shuts down because Docker containers are designed to terminate once the primary process inside the container finishes. If you just run Python without specifying an interactive process or a persistent program, the container starts, runs Python, and immediately exits when Python finishes executing. For more information, search for "Docker primary process".
+### Run Containers
 
 ```bash
 # Basic run
@@ -34,6 +32,8 @@ docker run --name my-python -d python:3.9-slim
 # Run with port mapping
 docker run -p 8080:80 nginx
 ```
+
+> **Note:** When you use a Docker container to run Python, the container typically shuts down because Docker containers are designed to terminate once the primary process inside the container finishes. For more information, search for `Docker primary process` and `Dockerfile`.
 
 ### Container Management
 
