@@ -1,0 +1,7 @@
+test
+ça marche
+F5 - still there
+rebuild still there
+and also using current directory as bind mount
+et si j'édite d'ici, bonjour
+houhouuuu, j'ajoute des logs

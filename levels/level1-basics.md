@@ -84,6 +84,7 @@ RESONANCE EXERCISE 12:
 Hint: Watch the artifact's state carefully...
 ===================
 ```
+> **Note:** [Docker Hub](https://hub.docker.com/) is a public repository where Docker images are stored. Once you find the desired image, you can use its name and tag in the docker pull command.
 
 ```plaintext
 !!! QUANTUM FLUX WARNING !!!
@@ -157,7 +158,7 @@ PRACTICAL APPLICATION:
 
 >_ We're detecting signs of a distribution network.
    These artifacts weren't meant to exist in
-   isolation - they're nodes in something bigger.
+   isolation - they're nodes part of something bigger.
 
 >_ A stable resonance point could let us preserve
    their data... but we need to understand their
@@ -201,7 +202,7 @@ HACK TIP: ⚡
 
 ## Network Node Stabilization
 
-Configure a web server container that can serve content and maintain state across restarts.
+Search for Nginx image and configure a web server container that can serve content and maintain state across restarts.
 
 - [ ] Container running with persistent storage
 - [ ] Port mapping correctly configured
