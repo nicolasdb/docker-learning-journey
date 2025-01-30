@@ -1,74 +1,75 @@
 # Docker Learning Journey 🎮
 
-Welcome to a gamified approach to learning Docker and Docker Compose! This repository is structured as a progressive learning journey, taking you from Docker basics to creating and managing complex container setups.
+Welcome to a gamified approach to learning Docker! This repository is structured as a progressive learning journey, taking you from Docker basics to creating and managing complex container setups.
 
 ## Prerequisites
 
 - Basic command line knowledge
-- Git basics
+- Command line basics
 - A curious mind! 🧠
 
 ## Journey Structure
 
 The journey is divided into progressive levels:
 
-1. Level 1: Docker Basics (Start Here!)
-   - Container fundamentals
-   - Basic Docker commands
-   - Dockerfile creation
+### 🎯 Level 1: Container Basics
 
-2. Level 2: Docker Compose
-   - Multi-container applications
-   - Service definitions
-   - Container networking
+- Learn to handle single containers
+- Master basic Docker commands
+- Create and manage Dockerfiles
+- Mini-boss: Deploy your first containerized application
 
-3. Level 3: Custom Configurations
-   - Advanced Docker features
-   - Container optimization
-   - Best practices
+Key Skills:
 
-4. Level 4: Boss Level
-   - Final challenge
-   - Real-world scenarios
-   - Complex deployments
+- Docker installation and setup
+- Basic container operations
+- Port mapping and storage basics
+- Building custom images
 
-Each level is documented in the `levels/` directory, with reference materials available in the `rtfm/` (Read The Friendly Manual) directory.
+[Begin Your Journey](levels/level1-basics.md)
 
-## Getting Started
+### 🎯 Level 2: Multi-container magic
 
-1. Clone this repository
+> **Status: Coming Soon**
 
-   ```bash
-   git clone https://github.com/yourusername/docker-learning-journey.git
-   cd docker-learning-journey
-   ```
+- Orchestrate multiple containers
+- Master Docker Compose
+- Handle container networking
+- Mini-boss: Create a multi-container application
 
-   > to clone this repo and open the directory
+### 🎯 Level 3: Service integration
 
-2. Create your quest branch
+> **Status: Coming Soon**
 
-    ```bash
-    git checkout -b myQuest
-    ```
+- Advanced Docker features
+- Container optimization
+- Production best practices
+- Mini-boss: Optimize a container setup
 
-    > to create or switch to, a new branch
+### 🎯 Level 4: BOSS LEVEL
 
-3. Follow [followThisWhiteRabbit.md](followThisWhiteRabbit.md) to begin your journey!
+> **Status: Coming Soon**
+
+Final Challenge: Build a production-ready container environment
 
 ## Documentation
 
-- `rtfm/`: Comprehensive documentation covering Docker concepts, operations, and best practices
+- `rtfm/`: Comprehensive documentation covering Docker concepts and best practices
 - `levels/`: Detailed instructions and challenges for each learning level
-- `docs/`: Project documentation including contribution guidelines and licensing
+- `workbench/`: Your workspace for taking notes and implementing challenges
+- `docs/`: Project documentation including contribution guidelines
+
+## Need Help?
+
+- Check the `rtfm/` directory for comprehensive documentation
+- Each level includes detailed explanations
+- Track your progress in `workbench/progress.md`
 
 ## Contributing
 
 We welcome contributions! Please see `docs/CONTRIBUTING.md` for guidelines.
 
-For community standards and expectations, refer to:
-
-- `CODE_OF_CONDUCT.md` (strong foundation for common dynamics)
-- `docs/CODE_OF_CONDUCT_extended.md` (for physical maker spaces dynamics)
+For community standards and expectations, refer to `CODE_OF_CONDUCT.md`
 
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)
 
