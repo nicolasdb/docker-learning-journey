@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Test</title>
+    <script>
+        async function fetchResults() {
+            const response = await fetch("/results");
+            const data = await response.json();
+            const resultsDiv = document.getElementById("results");
+            resultsDiv.innerHTML = "<ul>" + data.map(item => `<li>${item.name}: ${item.answer}</li>`).join("") + "</ul>";
+        }
+
+        async function submitForm(event) {
+            event.preventDefault();
+            const formData = new FormData(event.target);
+            const name = formData.get("name");
+            const answer = formData.get("answer");
+
+            const response = await fetch("/submit", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({ name, answer }),
+            });
+            if (response.ok) {
+                fetchResults();  // Refresh results after submission
+            } else {
+                alert("Error submitting data!");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Flask Test Form</h1>
+
+    <form onsubmit="submitForm(event)">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="answer">Answer:</label>
+        <input type="text" id="answer" name="answer" required><br><br>
+        
+        <button type="submit">Submit</button>
+    </form>
+
+    <h2>Results</h2>
+    <div id="results">
+        <!-- Data will be inserted here -->
+    </div>
+
+    <script>
+        fetchResults();  // Fetch and display results on page load
+    </script>
+</body>
+</html>

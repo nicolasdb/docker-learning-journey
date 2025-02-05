@@ -62,6 +62,7 @@ SECURITY CHECKLIST:
 - [ ] Set up image scanning
 - [ ] Implement network policies
 - [ ] Secure sensitive data
+note: supabase RLS, managing "secrets" with docker
 - [ ] Configure logging and auditing
 
 *Study security documentation for best practices.*

@@ -8,8 +8,7 @@ You can use a temporary container to create a backup of your volume. This exampl
 
 ```bash
 # Backup volume
-docker run --rm -v my_log_data:/source -v $(pwd):/backup alpine \
-  tar czf /backup/my_log_data_backup.tar.gz -C /source .
+docker run --rm -v my_log_data:/source -v $(pwd):/backup alpine tar czf /backup/my_log_data_backup.tar.gz -C /source .
 ```
 
 This command mounts the volume `my_log_data` to `/source` inside the container and the current directory to `/backup`. It then creates a compressed tarball of the volume data in the current directory.

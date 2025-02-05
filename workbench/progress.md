@@ -6,7 +6,7 @@
 - [x] Port mapping
 - [x] Volume management
 - [x] Custom Dockerfile creation
-- [ ] Multi-stage builds
+<!-- - [ ] Multi-stage builds >>> optimisation : level 3 -->
 - [x] Resource monitoring
 
 ## Your Achievements

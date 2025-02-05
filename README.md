@@ -1,6 +1,6 @@
 # Docker Learning Journey 🎮
 
-Welcome to a gamified approach to learning Docker! This repository is structured as a progressive learning journey, taking you from Docker basics to creating and managing complex container setups.
+Welcome to a different approach to learning Docker! This repository is structured as a progressive learning journey, taking you from Docker basics to creating and managing complex container setups.
 
 ## Prerequisites
 
