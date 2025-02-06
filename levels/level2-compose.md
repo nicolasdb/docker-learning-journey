@@ -110,8 +110,7 @@ HACK TIP: ⚡
 ### 🎯 Mission 2 Victory Conditions
 
 - [ ] Create custom Docker network
-- [ ] Connect Flask and PostgreSQL services
-- [ ] Configure Supabase service integration
+- [ ] Connect Flask to Supabase PostgreSQL integration
 - [ ] Set up proper port mapping
 - [ ] Test inter-service communication
 - [ ] Verify network isolation

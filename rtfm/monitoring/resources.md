@@ -81,18 +81,22 @@ docker run --restart unless-stopped my-image
 
 ```bash
 # Run Ollama with resource limits
-docker run -d \
-  --name ollama \
-  -p 11434:11434 \
-  -v ollama_data:/root/.ollama \
-  --restart unless-stopped \
-  -m 8g \
-  --cpus="2.0" \
-  ollama/ollama
+docker run -d --name ollama-cpu -p 11434:11434 -v ollama_data:/root/.ollama --restart unless-stopped -m 8g --cpus="2.0" ollama/ollama
 
 # Monitor usage
 docker stats ollama
 ```
+
+## Command Explanation
+
+- `-d`: Runs the container in detached mode, meaning it runs in the background.
+- `--name ollama-cpu`: Assigns the name "ollama-cpu" to the container.
+- `-p 11434:11434`: Maps port 11434 on the host to port 11434 on the container, allowing access to the container's services via this port.
+- `-v ollama_data:/root/.ollama`: Mounts the volume `ollama_data` to the `/root/.ollama` directory inside the container, enabling persistent storage.
+- `--restart unless-stopped`: Configures the container to always restart unless it is explicitly stopped.
+- `-m 8g`: Limits the container's memory usage to 8 gigabytes.
+- `--cpus="2.0"`: Limits the container to use at most 2 CPU cores.
+- `ollama/ollama`: Specifies the Docker image to use for the container.
 
 ## Best Practices
 

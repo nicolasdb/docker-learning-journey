@@ -1,0 +1,32 @@
+services:
+  streamlit:
+    build:
+      context: ./app
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./app:/app
+      # Option 1: Using CSV file as questions source
+      - ./data:/app/data
+    env_file:
+      - .env
+    environment:
+      # Questions Configuration
+      - QUESTIONS_FILE=/app/data/questions.csv  # Default: CSV file source
+      # Option 2: Supabase Configuration (uncomment and set these for using Supabase as questions source)
+      # - QUESTIONS_SOURCE=supabase
+      # - QUESTIONS_TABLE=maturity_questions
+      # Note: When using Supabase as source, ensure your questions table has the following structure:
+      # CREATE TABLE maturity_questions (
+      #   id SERIAL PRIMARY KEY,
+      #   context_id TEXT NOT NULL,
+      #   section TEXT NOT NULL,
+      #   question TEXT NOT NULL,
+      #   option1 TEXT NOT NULL,
+      #   option2 TEXT NOT NULL,
+      #   option3 TEXT NOT NULL,
+      #   option4 TEXT NOT NULL,
+      #   option5 TEXT NOT NULL,
+      #   CONSTRAINT fk_context FOREIGN KEY (context_id) REFERENCES contexts(id)
+      # );
+      # Note: CSV structure should follow: section,question,option1,option2,option3,option4,option5
